@@ -1,1 +1,1 @@
-# vid.movie.rental.project
+# Movie App
