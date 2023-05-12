@@ -22,7 +22,7 @@ app.use(express.json());
 app.use("/movie/api/v1/user", userRouter);
 app.use("/movie/api/v1/genre", genreRouter);
 
-app.use(globalErrorHandler);
+app.use(globalErrorHandler)
 
 app.listen(port, () => {
   console.log(`To the glory of God server running on port: ${port}`);
