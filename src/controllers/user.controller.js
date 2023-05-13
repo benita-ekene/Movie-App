@@ -21,9 +21,6 @@ export default class UserController {
     }
 
 
- 
-
-
   static async findUser(req, res,) {
     const { id } = req.query
     const {error} = mongoIdValidator.validate(req.query)
