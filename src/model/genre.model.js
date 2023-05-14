@@ -2,7 +2,7 @@ import { Schema, model, Types, Query } from "mongoose";
 
 const GenreSchema = new Schema({
 
-  title: {
+  Title: {
     type: String,
     required: true,
   },
@@ -12,8 +12,8 @@ const GenreSchema = new Schema({
   },
   status: {
     type: String,
-    enum: ["pending", "in-progress", "completed"],
-    default: "pending",
+    enum: ["available", "available-soon", "Rented"],
+    default: "available",
   },
   
   customer: {

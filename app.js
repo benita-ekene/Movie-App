@@ -9,10 +9,7 @@ import { router as genreRouter } from "./src/router/genre.route.js";
 const app = express();
 dotenv.config();
 
-mongoose
-  .connect(process.env.DATABASE_CONNECTION_URL)
-  .then(() => console.log("Database connection established"))
-  .catch((e) => console.log(e.message));
+mongoose.connect(process.env.DATABASE_CONNECTION_URL).then(() => console.log("Database connection established")).catch((e) => console.log(e.message));
 
 const port = Number(process.env.PORT) || 4000;
 
