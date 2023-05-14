@@ -15,3 +15,12 @@ export const createGenreValidator = Joi.object({
   
   
 }).strict()
+
+export const updateGenreValidator = Joi.object({
+  customer: Joi.objectId().required(),
+  customerId: Joi.objectId().required(),
+  title: Joi.string().optional(),
+  producer: Joi.string().optional(),
+  dateOut: Joi.string().optional(),
+  dateReturned: Joi.string().optional(),
+}).strict()
