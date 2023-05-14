@@ -47,7 +47,7 @@ export default class UserController {
     if (!user) throw new NotFoundError('User not found')
 
     res.status(200).json({
-      message: "User found successfully",
+      message: "User found",
       status: "Success",
       data: {
         user

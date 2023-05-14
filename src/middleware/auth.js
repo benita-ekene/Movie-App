@@ -9,6 +9,6 @@ export function userAuthMiddleWare(req, res, next){
     req.user = payload
     next()
   }catch (err){
-    throw new UnAuthorizedError("Access denied, invalid token.")
+    throw new UnAuthorizedError("Access denied, provide a invalid token.")
   }
 } 

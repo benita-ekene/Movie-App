@@ -15,4 +15,5 @@ router.get("/all_genre", userAuthMiddleWare, tryCatchHandler( GenreController.fi
 
 router.delete("/delete",  userAuthMiddleWare, tryCatchHandler( GenreController.deleteOneGenre))
 
+//Exporting genre router
 export { router };

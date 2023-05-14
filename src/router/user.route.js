@@ -8,6 +8,6 @@ router.post("/create", tryCatchHandler( UserController.createUser) )
 router.get("/", tryCatchHandler( UserController.findUser) )
 router.post("/login", tryCatchHandler( UserController.loginUser) )
 
-
+//expoting user router
 export { router }
 

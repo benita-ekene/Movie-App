@@ -5,7 +5,7 @@ export const createUserValidator = Joi.object({
   email: Joi.string().regex(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)
   .required()
   .messages({
-    'string.pattern.base': 'Email is not a valid email format/address',
+    'string.pattern.base': 'This email is not a valid email format/address',
   }),
   password: Joi.string().regex(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{8,}$/)
   .required()

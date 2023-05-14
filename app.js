@@ -22,5 +22,5 @@ app.use("/movie/api/v1/genre", genreRouter);
 app.use(globalErrorHandler)
 
 app.listen(port, () => {
-  console.log(`To the glory of God server running on port: ${port}`);
+  console.log(`To the glory of God the server running on port: ${port}`);
 });

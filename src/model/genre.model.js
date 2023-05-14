@@ -19,10 +19,6 @@ const GenreSchema = new Schema({
     type: String,
     required: true},
 
-    dateOut: { 
-      type: Date, 
-      required: true,
-      default: Date.now
     },
     dateReturned: { 
       type: Date

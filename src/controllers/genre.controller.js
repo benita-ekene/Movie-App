@@ -11,7 +11,7 @@ export default class GenreController {
 
       const newGenre = await Genre.create({...req.body, customer: req.user._id, customerId: req.user._id })
       res.status(201).json({
-      message: "Genre has been created successfully",
+      message: "the genre has been created successfully",
       status: "Success",
       data:{
         genre: newGenre
