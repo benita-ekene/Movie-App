@@ -2,19 +2,31 @@ import { Schema, model, Types, Query } from "mongoose";
 
 const GenreSchema = new Schema({
 
-  Title: {
+  title: {
     type: String,
     required: true,
   },
+
+  category : {
+    type: String,
+    required: true
+},
   producer:{
     type: String,
     required: true,
   },
-  status: {
+  releaseDate: {
     type: String,
-    enum: ["available", "available-soon", "Rented"],
-    default: "available",
-  },
+    required: true},
+
+    dateOut: { 
+      type: Date, 
+      required: true,
+      default: Date.now
+    },
+    dateReturned: { 
+      type: Date
+    },
   
   customer: {
     type: Types.ObjectId,
