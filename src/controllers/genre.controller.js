@@ -8,8 +8,8 @@ export default class GenreController {
       const {error } = createGenreValidator.validate(req.body)
       if(error) throw error
 
-      const isUserAvailable = await User.findById(req.body.producer)
-      if(!isUserAvailable) throw new BadUserRequestError(`User with this id: ${req.body.producer} does not exist`)
+      const isUserAvailable = await User.findById(req.body.customer)
+      if(!isUserAvailable) throw new BadUserRequestError(`User with this id: ${req.body.customer} does not exist`)
 
       const newGenre = await Genre.create(req.body)
       res.status(200).json({

@@ -1,1 +1,1 @@
-# Movie App
+# Movie Genre API

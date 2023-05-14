@@ -6,15 +6,27 @@ const GenreSchema = new Schema({
     type: String,
     required: true,
   },
+
+  category : {
+    type: String,
+    required: true
+},
   producer:{
     type: String,
     required: true,
   },
-  status: {
+  releaseDate: {
     type: String,
-    enum: ["pending", "in-progress", "completed"],
-    default: "pending",
-  },
+    required: true},
+
+    dateOut: { 
+      type: Date, 
+      required: true,
+      default: Date.now
+    },
+    dateReturned: { 
+      type: Date
+    },
   
   customer: {
     type: Types.ObjectId,
