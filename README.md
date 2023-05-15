@@ -1,4 +1,4 @@
-# Movie Genre API Project
+# Movie Store APIs Project
 This project has two branches<br>
 1.  main 
 2.  auth-branch
