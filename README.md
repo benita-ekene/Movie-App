@@ -1,4 +1,4 @@
-# Movie Genre API
+# Movie Store API
 
 This project has two branches<br>
 
