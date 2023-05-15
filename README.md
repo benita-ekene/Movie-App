@@ -1,4 +1,4 @@
-# Movie Store API
+# Movie Store APIs
 
 This project has two branches<br>
 
