@@ -6,37 +6,34 @@ const GenreSchema = new Schema({
     type: String,
     required: true,
   },
-
-  category : {
+  category: {
     type: String,
-    required: true
-},
-  producer:{
+    required: true,
+  },
+  producer: {
     type: String,
     required: true,
   },
   releaseDate: {
     type: String,
-    required: true},
-
-    },
-    dateReturned: { 
-      type: Date
-    },
-  
+    required: true,
+  },
+  dateReturned: {
+    type: Date,
+  },
   customer: {
     type: Types.ObjectId,
     ref: "User",
     required: true,
   },
   customerId: String,
- 
   isDeleted: {
     type: Boolean,
     default: false,
   },
  
-}, 
+ 
+},
 {
   timestamps: true,
 });
