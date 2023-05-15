@@ -14,6 +14,7 @@ export class BadUserRequestError extends Error {
   }
 }
 
+//create unauthorized error to authenticate access 
 export class UnAuthorizedError extends Error {
   constructor(message){
     super(message)
